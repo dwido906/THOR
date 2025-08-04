@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(vrbll C)
+add_executable(chat_server chat_server.c)
+add_executable(voice_server voice_server.c)
+add_executable(cli_ui cli_ui.c client_lib.c)

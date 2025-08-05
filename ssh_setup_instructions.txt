@@ -1,0 +1,34 @@
+
+🔐 SSH AUTOMATION SETUP INSTRUCTIONS
+=====================================
+
+1. COPY PUBLIC KEY TO SERVER:
+   ssh root@207.246.95.179
+   mkdir -p ~/.ssh
+   echo "YOUR_PUBLIC_KEY_HERE" >> ~/.ssh/authorized_keys
+   chmod 600 ~/.ssh/authorized_keys
+   chmod 700 ~/.ssh
+
+2. TEST SSH CONNECTION:
+   ssh northbay-server
+   
+3. ENABLE AI AUTO-DEPLOYMENT:
+   python3 thor_auto_deploy.py
+
+4. FUTURE DEPLOYMENTS:
+   AI agents can now automatically:
+   - Deploy code changes
+   - Update configurations  
+   - Monitor server health
+   - Scale services
+   
+🎯 BENEFITS:
+✅ No manual SSH needed
+✅ AI agents work autonomously  
+✅ Instant deployments
+✅ 24/7 automation capability
+
+🚀 Once setup, just run:
+   ./auto_deploy.sh
+   
+And THOR-AI handles everything!
